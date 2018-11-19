@@ -37,7 +37,7 @@ ASCII screen for zybo use
  *
  *
  *
- *
+ *  interrupt_counter_tut_2B.c er en test kode
  *
  *
  */
