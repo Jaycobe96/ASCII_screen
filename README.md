@@ -1,6 +1,9 @@
 # ASCII_screen
 ASCII screen for zybo use 
  /* MANUAL
+ * 
+ *   0. #include "ASCII_screen.h"  
+ *
  * 	- INIT SKÆRM OG OBJEKTER
  * 		1. Definer layout:  		screen_layoutpack_initialize();
  * 		2. Opret skærm:   			screen* scr = screen_initialize(int width_, int  height_);
