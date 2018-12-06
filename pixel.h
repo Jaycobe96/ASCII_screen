@@ -8,7 +8,7 @@
 #ifndef SRC_PIXEL_H_
 #define SRC_PIXEL_H_
 
-#import "xil_printf.h"
+#import <xil_printf.h>
 
 typedef struct {
 
@@ -30,9 +30,9 @@ typedef struct{
 
 typedef struct{
 
-	char8* out_data;
-	int width;
-	int length;
+	 char8* out_data;
+	 int width;
+	 int length;
 
 
 }str_dim;

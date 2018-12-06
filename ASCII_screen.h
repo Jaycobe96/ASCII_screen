@@ -9,7 +9,6 @@
 #define SRC_ASCII_SCREEN_H_
 
 
-#include <string.h>
 #include "Layout_Pack.h"
 
 /* MANUAL
@@ -84,13 +83,14 @@ pixel screen_coords(int x, int y);
 void screen_layoutpack_initialize(void);
 
 // add object  ( 1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
-void screen_add_obj(square to_add,screen* _Screen,pixel _start_pos);
+void screen_add_obj(square* to_add,screen* _Screen,pixel _start_pos);
 
 
 
 /// TEST
 void new_ob(pixel* shape, char8* text, screen* Screen,pixel start_pos);
 void screen_fill(screen* The_screen,char character_background);
+
 
 
 

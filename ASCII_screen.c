@@ -8,8 +8,6 @@
 #include "ASCII_screen.h"
 
 
-
-
 // SCREEN RETURN-CONSCTUCTOR
 
  screen* screen_initialize(int width_, int  height_){
@@ -48,6 +46,17 @@ void screen_fill(screen* The_screen,char character_background)
 // UPDATE THE WHOLE SCREEN
  void screen_print(screen* The_screen)
  {
+	 int to_earse = The_screen->len;
+	 while(to_earse != 0)
+	 {
+		 outbyte(0x0D);
+		 outbyte(0x08);
+		 to_earse--;
+	 }
+
+
+
+
 	 int i;
 	 for(i = 0;i <= ((The_screen->len));i++)
 	 {
@@ -63,6 +72,7 @@ void screen_fill(screen* The_screen,char character_background)
 
 		 outbyte(The_screen->p[i]);
 		 }
+
 
 //		 else
 	//	 {
@@ -87,19 +97,35 @@ pixel screen_coords(int x, int y){
 
 
 
-void screen_add_obj(square to_add,screen* _Screen,pixel _start_pos){
+void screen_add_obj(square* to_add,screen* _Screen,pixel _start_pos){
 
-	pixel* pix = to_add.pixels;
-	char8* out_dat = to_add.out_data;
+
+	square* ptr = to_add;
+	pixel* pix = ptr->pixels;
+	char8* out_dat = ptr->out_data;
+
+
 
 	new_ob(pix,out_dat,_Screen,_start_pos);
+
+
+
+free(pix);
+pix = NULL;
+out_dat = NULL;
+
+free(ptr);
+ptr = NULL;
+
+
+
 }
 
 void new_ob(pixel* shape, char8* text, screen* Screen,pixel start_pos){
 
 	 int y_coord =  start_pos.y;
 	 int x_coord =  start_pos.x;
-	 int screen_width = Screen->width;;
+	 int screen_width = Screen->width;
 
 	 int text_pointer;
 	 int true_pos;
@@ -121,6 +147,7 @@ void new_ob(pixel* shape, char8* text, screen* Screen,pixel start_pos){
 
 
 	 }
+
 
 
 

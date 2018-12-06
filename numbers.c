@@ -10,7 +10,7 @@ void construct_ASCII(void)
                     /// 1
  ASCII_ONE.width = NUMBER_WIDTH;
  ASCII_ONE.length = NUMBER_LENGTH;
- ASCII_ONE.out_data = "xxxxxxx.oxxxxxxo888xxxxxxx888xxxxxxx888xxxxxxx888xxxxxxx888xxxxxxo888o";
+ ASCII_ONE.out_data = "xxxxxxx.oxxxxxxxo888xxxxxxxx888xxxxxxxx888xxxxxxxx888xxxxxxxx888xxxxxxxo888ox";
 
 
                     /// 2
@@ -65,7 +65,60 @@ void construct_ASCII(void)
  ASCII_ZERO.width = NUMBER_WIDTH;
  ASCII_ZERO.length = NUMBER_LENGTH;
  ASCII_ZERO.out_data = "xxx.oooo.xxxxd8P\'`Y8bxx888xxxx888x888xxxx888x888xxxx888x`88bxxd88\'xx`Y8bd8P\'x";
+
+ /// TEST PIXEL
+//ASCII_TEST.width = 1;
+//ASCII_TEST.length = 1;
+//ASCII_TEST.out_data = 'p';
+
+//// collon
+ASCII_COLO.width = 4;
+ASCII_COLO.length = 7;
+ASCII_COLO.out_data = "xxxxo8ox`\"\'xo8ox`\"\'xxxxxxxxx";
+
+/// MON
+ASCII_MON.width = 21;
+ASCII_MON.length = 5;
+ASCII_MON.out_data = "xxx__xx_______xx_xx__xx/xx|/xx/x__x\\/x|/x/x/x/|_/x/x/_/x/xxxx/x/_/xx/_/\\____/_/|_/xxxxxxxxxxxxxxxxxxxxxxx";
+/// TUE
+ASCII_TUE.width = 17;
+ASCII_TUE.length = 5;
+ASCII_TUE.out_data = "x________xx______/_xx__/x/x/x/x__/x/x/x/x/_/x/x_/xx/_/xx\\____/___/xxxxxxxxxxxxxxxxxxx";
+/// WEN
+ASCII_WEN.width = 20;
+ASCII_WEN.length = 5;
+ASCII_WEN.out_data = "xx_xxxxxx_______xx__x|x|x/|x/x/x__/x|/x/x|x|/x|/x/x_//xxxx/xx|__/|__/___/_/|_/xxxxxxxxxxxxxxxxxxxxxx";
+/// THU
+ASCII_THU.width = 18;
+ASCII_THU.length = 5;
+ASCII_THU.out_data = "x________x____xx__/_xx__/x//x/x/x/x/x/x/x/x_xx/x/_/x/x/_/x/_//_/\\____/xxxxxxxxxxxxxxxxxxxx";
+/// FRI
+ASCII_FRI.width = 16;
+ASCII_FRI.length = 5;
+ASCII_FRI.out_data = "xxx_______xx____xx/x__/x_x\\/xx_/x/x_//x,x_//x/xx/_/x/_/|_/___/xxxxxxxxxxxxxxxxxx";
+/// SAT
+ASCII_SAT.width = 17;
+ASCII_SAT.length = 5;
+ASCII_SAT.out_data = "xxx_______x______xx/x__/x_x/_xx__/x_\\x\\/x__x|/x/xxx/___/_/x|_/_/xxxxxxxxxxxxxxxxxxxxx";
+/// SUN
+ASCII_SU.width = 18;
+ASCII_SU.length = 5;
+ASCII_SU.out_data = "xxx______xx___xx__xx/x__/x/x/x/x|/x/x_\\x\\/x/_/x/xxxx/x/___/\\____/_/|_/xxxxxxxxxxxxxxxxxxxx";
+
+// 	STOPWATCH
+
+ASCII_STOPWATCH.width = 52;
+ASCII_STOPWATCH.length = 5;
+ASCII_STOPWATCH.out_data = "xxx______________xx___x_xxxxxx_____x_____________x__xx/x__/_xx__/x__x\\/x_x\\x|x/|x/x/x_x/_xx__/x___/x//x/x_\\x\\xx/x/x/x/_/x/x___/x|/x|/x/x__x|/x/x/x/__/x_xx/x/___/x/_/xx\\____/_/xxx|__/|__/_/x|_/_/xx\\___/_//_/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+
+ASCII_SET.width = 17;
+ASCII_SET.length = 5;
+ASCII_SET.out_data = "xxx______________xx/x__/x__/_xx__/x_\\x\\/x_/xx/x/xxx/___/___/x/_/xxxxxxxxxxxxxxxxxxxxx";
+
+
 }
+
+
 
 str_dim format_ASCII(str_dim to_format)
 {

@@ -13,6 +13,13 @@
 
 
 
+str_dim ASCII_SU;
+str_dim ASCII_MON;
+str_dim ASCII_TUE;
+str_dim ASCII_WEN;
+str_dim ASCII_THU;
+str_dim ASCII_FRI;
+str_dim ASCII_SAT;
 str_dim ASCII_ONE;
 str_dim ASCII_TWO;
 str_dim ASCII_THREE;
@@ -23,6 +30,18 @@ str_dim ASCII_SEVEN;
 str_dim ASCII_EIGHT;
 str_dim ASCII_NINE;
 str_dim ASCII_ZERO;
+str_dim ASCII_STOPWATCH;
+str_dim ASCII_SET;
+
+
+/////// 4x7
+str_dim ASCII_COLO;
+
+
+
+////// 1x1
+str_dim ASCII_TEST;
+
 
 
 

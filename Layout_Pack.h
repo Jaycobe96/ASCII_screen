@@ -14,19 +14,22 @@
 
 
 
-void init_Layout_Pack(void);
-square str_dim_to_square(str_dim The_String);
 
-////////////////////////// NUMBERS IN FORMAT 7x11 ////////////
- square NORMAL20_ONE;
- square NORMAL20_TWO;
- square NORMAL20_THREE;
- square NORMAL20_FOUR;
- square NORMAL20_FIVE;
- square NORMAL20_SIX;
- square NORMAL20_SEVEN;
- square NORMAL20_EIGHT;
- square NORMAL20_NINE;
- square NORMAL20_ZERO;
+
+
+
+square* str_dim_to_square(str_dim The_String);
+void init_Layout_Pack(void);
+square* extract(str_dim flat);
+
+
+
+
+
+
+
+
+
+
 
 #endif /* SRC_LAYOUT_PACK_H_ */
